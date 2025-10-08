@@ -34,6 +34,12 @@ registerApplication({
 //   activeWhen: ["/"],
 // });
 
+// registerApplication({
+//   name: "@bytebank/investments",
+//   app: () => System.import<LifeCycles>("//localhost:8505/bytebank-investments.js"),
+//   activeWhen: ["/"],
+// });
+
 start({
   urlRerouteOnly: true,
 });
