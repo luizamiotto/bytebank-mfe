@@ -11,6 +11,10 @@ module.exports = (webpackConfigEnv, argv) => {
   });
 
   return merge(defaultConfig, {
-    externals: ["@bytebank/styles", "@bytebank/context"],
+    resolve: {
+      extensions: [".tsx", ".ts", ".js"],
+      fullySpecified: false,
+    },
+    externals: ["@bytebank/styles", "@bytebank/context", "react", "react-dom"],
   });
 };

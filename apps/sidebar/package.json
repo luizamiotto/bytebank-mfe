@@ -36,6 +36,8 @@
     "jest-cli": "^27.5.1",
     "prettier": "^2.3.2",
     "pretty-quick": "^3.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "standalone-single-spa-webpack-plugin": "^3.0.0",
     "ts-config-single-spa": "^3.0.0",
     "typescript": "^4.3.5",
@@ -57,8 +59,6 @@
     "@types/react-dom": "^17.0.9",
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
     "single-spa": "^5.9.3",
     "single-spa-react": "^6.0.2"
   },

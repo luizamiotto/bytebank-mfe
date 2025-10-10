@@ -1,4 +1,4 @@
-import { useResponsive } from "./hooks/useResponsive";
+import { useResponsive } from "@bytebank/context";
 // import { useSidebar } from "@/app/contexts/SidebarContext";
 import { Box } from "@mui/material";
 // import SidebarList from "./SidebarList";

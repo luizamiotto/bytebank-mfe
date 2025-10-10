@@ -1,6 +1,7 @@
 import { registerApplication, start, LifeCycles } from "single-spa";
 import "@bytebank/styles";
 import "@bytebank/context";
+import "@bytebank/components";
 
 const getEl = (id: string) => () => document.getElementById(id);
 

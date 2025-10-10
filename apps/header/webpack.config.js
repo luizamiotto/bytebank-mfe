@@ -26,6 +26,12 @@ module.exports = (webpackConfigEnv, argv) => {
         },
       ],
     },
-    externals: ["@bytebank/styles", "@bytebank/context"],
+    externals: [
+      "react",
+      "react-dom",
+      "@bytebank/styles",
+      "@bytebank/context",
+      "@bytebank/components",
+    ]
   });
 };

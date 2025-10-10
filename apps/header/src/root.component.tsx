@@ -1,7 +1,6 @@
 import { AppBar, Box, Container } from "@mui/material";
-import UserComponent from "./components/UserComponent";
-import DrawerButton from "./components/DrawerButton";
 import { useResponsive } from "@bytebank/context";
+import { DrawerButton, UserComponent } from "@bytebank/components";
 
 export default function Root() {
   const { isMobile, isTablet, isDesktop } = useResponsive();
