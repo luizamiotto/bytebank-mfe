@@ -20,10 +20,13 @@ registerApplication({
 });
 
 registerApplication({
-  name: "@bytebank/welcome",
-  app: () => System.import<LifeCycles>("//localhost:8502/bytebank-welcome.js"),
+  name: "@bytebank/central-box",
+  app: () => System.import<LifeCycles>("//localhost:8502/bytebank-central-box.js"),
   activeWhen: ["/"],
-  customProps: { domElement: getEl('mf-welcome')() },
+  customProps: { 
+    domElement: getEl('mf-central-box')(),
+    content: "welcome"
+  },
 });
 
 registerApplication({

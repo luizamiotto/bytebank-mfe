@@ -39,7 +39,7 @@
         "@bytebank/responsive-context": "//localhost:9000/bytebank-root-config.js",
         "@bytebank/header": "//localhost:8500/bytebank-header.js",
         "@bytebank/sidebar": "//localhost:8501/bytebank-sidebar.js",
-        "@bytebank/welcome": "//localhost:8502/bytebank-welcome.js",
+        "@bytebank/central-box": "//localhost:8502/bytebank-central-box.js",
         "@bytebank/statement": "//localhost:8503/bytebank-statement.js",
         "@bytebank/transaction": "//localhost:8504/bytebank-transaction.js",
         "@bytebank/investments": "//localhost:8505/bytebank-investments.js"
@@ -69,8 +69,8 @@
     <div style="position: fixed; display: flex; width: 100%; justify-content: center; margin-bottom: 30px"> 
       <aside id="mf-sidebar"></aside>
     <!-- Estilos do CentralBox -->
-      <div style="display: flex; flex-direction: column; justify-content: center">
-        <section id="mf-welcome"></section>
+      <div style="display: flex; flex-direction: column; justify-content: flex-start; margin: 0 24px;">
+        <section id="mf-central-box"></section>
         <section id="mf-transaction"></section>
         <section id="mf-investments"></section>
       </div>

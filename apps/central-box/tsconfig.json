@@ -4,7 +4,7 @@
     "jsx": "react-jsx",
     "declarationDir": "dist"
   },
-  "files": ["src/bytebank-welcome.tsx"],
+  "files": ["src/bytebank-central-box.tsx"],
   "include": ["src/**/*"],
   "exclude": ["src/**/*.test*"]
 }

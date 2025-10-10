@@ -1,5 +1,5 @@
 {
-  "name": "@bytebank/welcome",
+  "name": "@bytebank/central-box",
   "scripts": {
     "start": "webpack serve",
     "start:standalone": "webpack serve --env standalone",
@@ -66,5 +66,5 @@
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
-  "types": "dist/bytebank-welcome.d.ts"
+  "types": "dist/bytebank-central-box.d.ts"
 }
