@@ -2,8 +2,7 @@ import { useResponsive } from "@bytebank/context";
 // import { userMock } from "@/app/mocks/user-mock";
 import { Box, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
-// import WelcomeImages from "../decorative-images/WelcomeImages";
-import { Balance } from "@bytebank/components";
+import { Balance, WelcomeImages } from "@bytebank/components";
 
 /** Componente que exibe a saudação de boas-vindas ao usuário. */
 export default function Welcome() {
@@ -34,7 +33,7 @@ export default function Welcome() {
 			}}
 		>
 			{/* Imagens decorativas, flutuando*/}
-			{/* {!isDesktop && <WelcomeImages />} */}
+			{!isDesktop && <WelcomeImages />}
 
 			{/* Agrupe textos e Balance juntos no mobile */}
 			<Box>
@@ -49,7 +48,8 @@ export default function Welcome() {
 						textAlign: isMobile ? "center" : "left",
 					}}
 				>
-					{/* Olá, {userMock[0].first_name}! :) */}
+					Olá, Nome e Sobrenome
+					{/* {userMock[0].first_name}! :) */}
 				</Typography>
 
 				<Typography

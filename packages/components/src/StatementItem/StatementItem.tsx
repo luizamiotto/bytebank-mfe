@@ -1,4 +1,3 @@
-"use client";
 // import { StatementItemInterface } from "@/app/mocks/statement-mock";
 import { Box, Divider, Typography } from "@mui/material";
 

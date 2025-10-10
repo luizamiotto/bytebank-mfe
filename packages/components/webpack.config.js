@@ -11,6 +11,14 @@ module.exports = (webpackConfigEnv, argv) => {
   });
 
   return merge(defaultConfig, {
-    // modify the webpack config however you'd like to by adding to this object
+    externals: ["react", "react-dom"],
+    module: {
+      rules: [
+        {
+          test: /\.(png|jpg|jpeg|gif|svg)$/i,
+          type: "asset/resource",
+        },
+      ],
+    },
   });
 };

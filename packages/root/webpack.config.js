@@ -33,5 +33,6 @@ module.exports = (webpackConfigEnv, argv) => {
         },
       ],
     },
+    externals: ["react", "react-dom"],
   });
 };

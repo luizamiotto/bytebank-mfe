@@ -38,16 +38,22 @@ registerApplication({
 
 registerApplication({
   name: "@bytebank/transaction",
-  app: () => System.import<LifeCycles>("//localhost:8504/bytebank-transaction.js"),
+  app: () => System.import<LifeCycles>("//localhost:8502/bytebank-central-box.js"),
   activeWhen: ["/"],
-  customProps: { domElement: getEl('mf-transaction')() },
+  customProps: { 
+    domElement: getEl('mf-transaction')(),
+    content: "transaction"
+  },
 });
 
 registerApplication({
   name: "@bytebank/investments",
-  app: () => System.import<LifeCycles>("//localhost:8505/bytebank-investments.js"),
+  app: () => System.import<LifeCycles>("//localhost:8502/bytebank-central-box.js"),
   activeWhen: ["/"],
-  customProps: { domElement: getEl('mf-investments')() },
+  customProps: { 
+    domElement: getEl('mf-investments')(),
+    content: "investments"
+  },
 });
 
 start({

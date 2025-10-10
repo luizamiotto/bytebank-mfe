@@ -1,8 +1,6 @@
 import { useResponsive } from "@bytebank/context";
 import { Box } from "@mui/material";
-// import Investments from "../investments/Investments";
-// import Transaction from "./Transaction";
-import { Welcome } from "@bytebank/components";
+import { Welcome, Transaction, Investments } from "@bytebank/components";
 
 interface CentralBoxProps {
   content: string;
@@ -27,8 +25,8 @@ export default function Root({ content }: CentralBoxProps) {
       }}
     >
       {content === "welcome" && <Welcome />}
-      {/* {content === "transaction" && <Transaction />}
-      {content === "investments" && <Investments />} */}
+      {content === "transaction" && <Transaction />}
+      {content === "investments" && <Investments />}
     </Box>
   );
 }
