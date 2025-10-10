@@ -1,4 +1,4 @@
-import { useResponsive } from "../../hooks/useResponsive";
+// import { useResponsive } from "../../hooks/useResponsive";
 // import { useSidebar } from "@/app/contexts/SidebarContext";
 import CloseIcon from "@mui/icons-material/Close";
 import {
@@ -18,7 +18,7 @@ type SidebarListProps = {
 
 /** Sidebar list component */
 export default function SidebarList({ onClose }: SidebarListProps) {
-	const { isMobile, isTablet, isDesktop } = useResponsive();
+	// const { isMobile, isTablet, isDesktop } = useResponsive();
 	// const { selectedItem, setSelectedItem } = useSidebar();
 
 	const itens = [
@@ -33,7 +33,7 @@ export default function SidebarList({ onClose }: SidebarListProps) {
 		onClose?.();
 	};
 
-	if (isDesktop) {
+	// if (isDesktop) {
 	return (
 		<List>
 		{itens.map((text, index) => (
@@ -84,9 +84,9 @@ export default function SidebarList({ onClose }: SidebarListProps) {
 		))}
 		</List>
 	);
-	}
+	// }
 
-	if (isTablet) {
+	// if (isTablet) {
 	return (
 		<Box
 		sx={{
@@ -128,9 +128,9 @@ export default function SidebarList({ onClose }: SidebarListProps) {
 		))}
 		</Box>
 	);
-	}
+	// }
 
-	if (isMobile) {
+	// if (isMobile) {
 	return (
 		<Box
 		sx={{
@@ -206,5 +206,5 @@ export default function SidebarList({ onClose }: SidebarListProps) {
 		</List>
 		</Box>
 	);
-	}
+	// }
 }

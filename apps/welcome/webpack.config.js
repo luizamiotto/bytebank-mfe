@@ -11,6 +11,6 @@ module.exports = (webpackConfigEnv, argv) => {
   });
 
   return merge(defaultConfig, {
-    externals: ["@bytebank/styles"],
+    externals: ["@bytebank/styles", "@bytebank/context"],
   });
 };

@@ -1,11 +1,11 @@
 // import { userMock } from "@/app/mocks/user-mock";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import { Box, Typography } from "@mui/material";
-import { useResponsive } from "../../hooks/useResponsive";
+// import { useResponsive } from "@bytebank/context";
 
 /** Componente que exibe as informações do usuário. */
 export default function UserComponent() {
-  const { isMobile } = useResponsive();
+//   const { isMobile } = useResponsive();
 
   return (
 	<Box
@@ -15,7 +15,7 @@ export default function UserComponent() {
 		maxWidth: "200px",
 	  }}
 	>
-	  {!isMobile && (
+	  {/* {!isMobile && ( */}
 		<Typography
 		  sx={{
 			fontSize: "13px",
@@ -27,7 +27,7 @@ export default function UserComponent() {
 		>
 		  {/* {userMock[0].first_name + " " + userMock[0].last_name} */}
 		</Typography>
-	  )}
+	  {/* )} */}
 	  <AccountCircleOutlinedIcon
 		sx={{
 		  color: "var(--secondaryColor)",

@@ -1,8 +1,6 @@
-import { ResponsiveProvider, useResponsive } from "./contexts/ResponsiveContext";
 import { registerApplication, start, LifeCycles } from "single-spa";
 import "@bytebank/styles";
-
-export { ResponsiveProvider, useResponsive };
+import "@bytebank/context";
 
 const getEl = (id: string) => () => document.getElementById(id);
 

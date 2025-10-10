@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const { merge } = require("webpack-merge");
 const singleSpaDefaults = require("webpack-config-single-spa-react-ts");
 
@@ -25,6 +26,6 @@ module.exports = (webpackConfigEnv, argv) => {
         },
       ],
     },
-    externals: ["@bytebank/styles"],
+    externals: ["@bytebank/styles", "@bytebank/context"],
   });
 };
