@@ -1,7 +1,7 @@
 import { useResponsive } from "@bytebank/context";
 // import { useSidebar } from "@/app/contexts/SidebarContext";
 import { Box } from "@mui/material";
-// import SidebarList from "./SidebarList";
+import { SidebarList } from "@bytebank/components";
 
 export default function Root() {
   const { isTablet, isDesktop } = useResponsive();
@@ -19,7 +19,7 @@ export default function Root() {
         backgroundColor: "var(--primaryTextColor)",
       }}
     >
-      {/* <SidebarList /> */}
+      <SidebarList />
     </Box>
   ) : isTablet ? (
     <Box
@@ -29,7 +29,7 @@ export default function Root() {
         top: "24px",
       }}
     >
-      {/* <SidebarList /> */}
+      <SidebarList />
     </Box>
   ) : null;
 }

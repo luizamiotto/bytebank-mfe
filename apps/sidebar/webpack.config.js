@@ -15,6 +15,22 @@ module.exports = (webpackConfigEnv, argv) => {
       extensions: [".tsx", ".ts", ".js"],
       fullySpecified: false,
     },
-    externals: ["@bytebank/styles", "@bytebank/context", "react", "react-dom"],
+    module: {
+      rules: [
+        {
+          test: /\.m?js$/,
+          resolve: {
+            fullySpecified: false,
+          },
+        },
+      ],
+    },
+    externals: [
+      "react",
+      "react-dom",
+      "@bytebank/styles",
+      "@bytebank/context",
+      "@bytebank/components",
+    ],
   });
 };
