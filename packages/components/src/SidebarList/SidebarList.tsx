@@ -1,3 +1,4 @@
+import { navigateToUrl } from 'single-spa';
 import { useResponsive } from "@bytebank/context";
 // import { useSidebar } from "@/app/contexts/SidebarContext";
 import CloseIcon from "@mui/icons-material/Close";
@@ -31,6 +32,9 @@ export default function SidebarList({ onClose }: SidebarListProps) {
   const handleClick = (text: string) => {
 		// setSelectedItem(text);
 		onClose?.();
+		
+		const url = `/${text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`;
+		navigateToUrl(url);
   };
 
   if (isDesktop) {
