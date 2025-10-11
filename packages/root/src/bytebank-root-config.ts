@@ -59,3 +59,7 @@ registerApplication({
 start({
   urlRerouteOnly: true,
 });
+
+if (location.pathname === "/" || location.pathname === "") {
+  window.history.pushState({}, "", "/inicio");
+}
