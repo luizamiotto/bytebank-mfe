@@ -1,5 +1,6 @@
 {
   "name": "bytebank-mfe",
+  "private": true,
   "workspaces": [
     "./apps/*",
     "./packages/*"
@@ -29,5 +30,9 @@
   "devDependencies": {
     "turbo": "^2.5.8"
   },
-  "packageManager": "npm@8.11.0"
+  "packageManager": "npm@8.11.0",
+  "overrides": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
 }

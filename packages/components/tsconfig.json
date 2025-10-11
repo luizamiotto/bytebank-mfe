@@ -2,9 +2,12 @@
   "extends": "ts-config-single-spa",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "declarationDir": "dist"
+    "declarationDir": "dist",
+    "declaration": true,
+    "outDir": "dist",
+    "rootDir": "src"
   },
   "files": ["src/bytebank-components.tsx"],
   "include": ["src/**/*"],
-  "exclude": ["src/**/*.test*"]
+  "exclude": ["node_modules", "dist", "src/**/*.test*"],
 }
