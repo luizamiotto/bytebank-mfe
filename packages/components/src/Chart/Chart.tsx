@@ -17,43 +17,41 @@ export default function Chart() {
 	};
 
 	return (
-		<></>
-		// <PieChart 
-		// 	series={
-		// 		[
-		// 			{ data, 
-		// 				innerRadius: 40, 
-		// 				cornerRadius: 75, 
-		// 			}
-		// 		]
-		// 	}
-		// 	sx={{
-		// 		"& .MuiPieArc-root": {
-		// 			stroke: "none",
-		// 		},
-		// 		"& .MuiChartsLegend-label": {
-		// 			color: "var(--primaryTextColor)",
-		// 			fontSize: 14,
-		// 			fontWeight: 400,
-		// 		},
-		// 		"& .MuiChartsLegend-root .MuiChartsLegend-mark": {
-		// 			width: 10,
-		// 			height: 10,
-		// 			ml: 3,
-		// 		},
-		// 		"& .MuiChartsLegend-item": {
-		// 			mt: isMobile ? 2 : 0,
-		// 		},
-		// 	}} 
-		// 	slotProps={{
-		// 		legend: {
-		// 			direction: isMobile ? "horizontal" : "vertical",
-		// 			position: {
-		// 				vertical: isMobile ? "bottom" : "middle",
-		// 			},
-		// 		},
-		// 	}}
-		// 	{...size}>
-		// </PieChart>
+		<PieChart 
+			series={
+				[
+					{ data, 
+						innerRadius: 40,
+					}
+				]
+			}
+			sx={{
+				"& .MuiPieArc-root": {
+					stroke: "none",
+				},
+				"& .MuiChartsLegend-label": {
+					color: "var(--primaryTextColor)",
+					fontSize: 14,
+					fontWeight: 400,
+				},
+				"& .MuiChartsLegend-root .MuiChartsLegend-mark": {
+					width: 10,
+					height: 10,
+					ml: 3,
+				},
+				"& .MuiChartsLegend-item": {
+					mt: isMobile ? 2 : 0,
+				},
+			}} 
+			slotProps={{
+				legend: {
+					direction: isMobile ? "horizontal" : "vertical",
+					position: {
+						vertical: isMobile ? "bottom" : "middle",
+					},
+				},
+			}}
+			{...size}>
+		</PieChart>
 	);
 }

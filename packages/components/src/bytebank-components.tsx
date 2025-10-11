@@ -1,5 +1,7 @@
 export { default as Balance } from "./Balance";
 
+export { default as Chart } from "./Chart";
+
 export { default as ChartCard } from "./ChartCard";
 
 export { default as DrawerButton } from "./DrawerButton";

@@ -1,6 +1,6 @@
 import { useResponsive } from "@bytebank/context";
 import { Box } from "@mui/material";
-import Chart from "@bytebank/components";
+import { Chart } from "@bytebank/components";
 
 export default function ChartCard() {
 	const { isMobile, isTablet, isDesktop } = useResponsive();
@@ -18,7 +18,7 @@ export default function ChartCard() {
 			}}
 		>
 			<Box sx={{mt: 3}}>
-				{/* <Chart /> */}
+				<Chart />
 			</Box>
 		</Box>
 	);
