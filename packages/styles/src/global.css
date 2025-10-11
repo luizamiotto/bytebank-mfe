@@ -29,3 +29,26 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.content-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

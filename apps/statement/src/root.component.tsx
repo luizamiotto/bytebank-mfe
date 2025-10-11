@@ -113,7 +113,7 @@ export default function Root() {
       sx={{
         width: isDesktop ? "282px" : isMobile ? "312px" : "600px",
         minHeight: isDesktop ? "512px" : "480px",
-        height: "100%",
+        // height: "100%",
         mt: isDesktop ? 3 : 6,
         borderRadius: "8px",
         backgroundColor: "var(--primaryTextColor)",

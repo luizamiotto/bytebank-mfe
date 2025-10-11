@@ -36,7 +36,6 @@
     {
       "imports": {
         "@bytebank/root-config": "//localhost:9000/bytebank-root-config.js",
-        "@bytebank/responsive-context": "//localhost:9000/bytebank-root-config.js",
         "@bytebank/header": "//localhost:8500/bytebank-header.js",
         "@bytebank/sidebar": "//localhost:8501/bytebank-sidebar.js",
         "@bytebank/central-box": "//localhost:8502/bytebank-central-box.js",
@@ -61,18 +60,15 @@
   </noscript>
 
   <div id="app-wrapper">
-    <!-- AJUSTAR COM A RESPONSIVIDADE -->
     <header id="mf-header"></header>
-    <!-- Estilos do ContentBody e BodyContainer -->
-    <div style="display: flex; width: 100%; justify-content: center; margin-bottom: 30px"> 
-      <aside id="mf-sidebar"></aside>
-    <!-- Estilos do CentralBox -->
-      <div style="display: flex; flex-direction: column; justify-content: flex-start; margin: 0 20px;">
+    <div class="container"> 
+      <div id="mf-sidebar"></div>
+      <div class="content-body">
         <section id="mf-central-box"></section>
         <section id="mf-transaction"></section>
         <section id="mf-investments"></section>
       </div>
-      <aside id="mf-statement"></aside>
+      <div id="mf-statement"></div>
     </div>
   </div>
 
