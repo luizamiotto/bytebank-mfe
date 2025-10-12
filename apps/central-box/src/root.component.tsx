@@ -2,7 +2,7 @@ import { useResponsive } from "@bytebank/context";
 import { Box } from "@mui/material";
 import { Welcome, Transaction, Investments } from "@bytebank/components";
 
-interface CentralBoxProps {
+export interface CentralBoxProps {
   content: string;
 }
 
