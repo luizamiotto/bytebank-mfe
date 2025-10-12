@@ -3,7 +3,11 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": ["dist/"]
+    },
+    "build:webpack": {
+      "dependsOn": ["^build:webpack"],
+      "outputs": ["dist/"]
     },
     "check-types": {
       "dependsOn": ["^check-types"]

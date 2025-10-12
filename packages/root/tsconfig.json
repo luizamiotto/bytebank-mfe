@@ -3,8 +3,13 @@
   "files": ["src/bytebank-root-config.ts"],
   "compilerOptions": {
     "jsx": "react-jsx",
-    "declarationDir": "dist"
+    "declaration": true,
+    "declarationDir": "dist",
+    "rootDir": "src",
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true
   },
   "include": ["src/**/*"],
-  "exclude": ["src/**/*.test*"]
+  "exclude": ["src/**/*.test*", "node_modules", "dist"]
 }

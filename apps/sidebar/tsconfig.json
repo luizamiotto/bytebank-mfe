@@ -2,9 +2,14 @@
   "extends": "ts-config-single-spa",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "declarationDir": "dist"
+    "declaration": true,
+    "declarationDir": "dist",
+    "rootDir": "src",
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true
   },
   "files": ["src/bytebank-sidebar.tsx"],
   "include": ["src/**/*"],
-  "exclude": ["src/**/*.test*"]
+  "exclude": ["src/**/*.test*", "node_modules", "dist"]
 }
