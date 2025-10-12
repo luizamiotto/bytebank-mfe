@@ -27,7 +27,7 @@ export default function Balance() {
     ? "var(--secondaryColor)"
     : "var(--primaryTextColor)";
 
-  const balance = useSelector(selectCurrentBalance);
+  const balance: number = useSelector(selectCurrentBalance);
   const balanceStr = new Intl.NumberFormat("pt-BR", {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
