@@ -62,6 +62,15 @@ services:
     environment:
       NODE_ENV: production
 
+  redux:
+    build:
+      context: .
+      dockerfile: packages/redux/Dockerfile
+    ports:
+      - "9004:3000"
+    environment:
+      NODE_ENV: production
+
   root:
     build:
       context: .
@@ -78,3 +87,4 @@ services:
       - components
       - context
       - styles
+      - redux

@@ -54,7 +54,9 @@
     "@types/webpack-env": "^1.16.2",
     "single-spa": "^5.9.3",
     "@types/react": "^17.0.19",
-    "@types/react-dom": "^17.0.9"
+    "@types/react-dom": "^17.0.9",
+    "@reduxjs/toolkit": "^2.9.0",
+    "react-redux": "^9.2.0"
   },
   "peerDependencies": {
     "react": "18.2.0",
