@@ -1,0 +1,80 @@
+services:
+  central-box:
+    build:
+      context: .
+      dockerfile: apps/central-box/Dockerfile
+    ports:
+      - "8502:3000"
+    environment:
+      NODE_ENV: production
+
+  header:
+    build:
+      context: .
+      dockerfile: apps/header/Dockerfile
+    ports:
+      - "8500:3000"
+    environment:
+      NODE_ENV: production
+
+  sidebar:
+    build:
+      context: .
+      dockerfile: apps/sidebar/Dockerfile
+    ports:
+      - "8501:3000"
+    environment:
+      NODE_ENV: production
+
+  statement:
+    build:
+      context: .
+      dockerfile: apps/statement/Dockerfile
+    ports:
+      - "8503:3000"
+    environment:
+      NODE_ENV: production
+
+  components:
+    build:
+      context: .
+      dockerfile: packages/components/Dockerfile
+    ports:
+      - "9003:3000"
+    environment:
+      NODE_ENV: production
+
+  context:
+    build:
+      context: .
+      dockerfile: packages/context/Dockerfile
+    ports:
+      - "9002:3000"
+    environment:
+      NODE_ENV: production
+
+  styles:
+    build:
+      context: .
+      dockerfile: packages/styles/Dockerfile
+    ports:
+      - "9001:3000"
+    environment:
+      NODE_ENV: production
+
+  root:
+    build:
+      context: .
+      dockerfile: packages/root/Dockerfile
+    ports:
+      - "9000:9000"
+    environment:
+      NODE_ENV: production
+    depends_on:
+      - central-box
+      - header
+      - sidebar
+      - statement
+      - components
+      - context
+      - styles
