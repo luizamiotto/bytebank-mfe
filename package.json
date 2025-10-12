@@ -6,9 +6,6 @@
     "./packages/*"
   ],
   "version": "1.0.0",
-  "dependencies": {
-    "turbo-windows-64": "^2.5.8"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "turbo run dev",
@@ -28,7 +25,7 @@
   },
   "homepage": "https://github.com/luizamiotto/bytebank-mfe#readme",
   "description": "",
-  "devDependencies": {
+  "dependencies": {
     "turbo": "^2.5.8"
   },
   "packageManager": "npm@8.11.0",
