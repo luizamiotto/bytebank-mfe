@@ -98,16 +98,16 @@ cd bytebank-mfe
 npm install
 ```
 
-### 3. Execute em modo desenvolvimento
+### 3. Build de produção
 
 ```bash
-npm run dev
+turbo run build
 ```
 
-### 4. Build de produção
+### 4. Execute em modo desenvolvimento
 
 ```bash
-npm run build
+turbo run dev
 ```
 
 ## 🐳 Docker
