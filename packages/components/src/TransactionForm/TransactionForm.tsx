@@ -79,10 +79,7 @@ export default function TransactionForm({ onCancel }: TransactionFormProps) {
     const transactionData = {
       date: transaction ? transaction.date : new Date().toISOString(),
       type: type,
-      value:
-        type === "Transferência"
-          ? -parseFloat(value.replace(",", "."))
-          : parseFloat(value.replace(",", ".")),
+      value: parseFloat(value.replace(",", ".")),
     };
 
     if (editingId && transaction) {

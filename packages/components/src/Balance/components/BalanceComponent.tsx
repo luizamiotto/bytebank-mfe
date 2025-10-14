@@ -30,6 +30,8 @@ export default function BalanceContent() {
   const balanceStr = new Intl.NumberFormat("pt-BR", {
 	minimumFractionDigits: 2,
 	maximumFractionDigits: 2,
+	style: "currency",
+  	currency: "BRL",
   }).format(balance ?? 0);
 
   return (

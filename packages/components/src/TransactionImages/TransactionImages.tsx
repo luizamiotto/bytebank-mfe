@@ -1,13 +1,13 @@
 import { useResponsive } from "@bytebank/context";
 import { Pixels2, Pixels3, Ilustracao2 } from "@bytebank/components";
-// import { useSelector } from "react-redux";
-// import { selectSidebarItem } from "@bytebank/redux";
+import { useSelector } from "react-redux";
+import { selectSelectedItem } from "@bytebank/redux";
 import { Box } from "@mui/material";
 
 /** Componente que exibe as imagens decorativas do formulário de transação. */
 export default function TransactionImages() {
   const { isMobile, isTablet, isDesktop } = useResponsive();
-  // const selectedItem = useSelector(selectSidebarItem);
+	const selectedItem = useSelector(selectSelectedItem);
 
   interface ImageConfig {
     key: string;
@@ -93,25 +93,25 @@ export default function TransactionImages() {
   }
 
   // Ilustração (mobile e tablet)
-  // if (
-  //   !isDesktop &&
-  //   (selectedItem === "Início" || selectedItem === "Transferências")
-  // ) {
-  //   images.push({
-  //     key: "illustration",
-  //     src: Ilustracao2,
-  //     alt: "ilustração",
-  //     width: isTablet ? 327 : 280,
-  //     height: 231,
-  //     sx: {
-  //       position: "absolute",
-  //       bottom: "28px",
-  //       right: "16px",
-  //       width: isTablet ? "327px" : "280px",
-  //       height: "231px",
-  //     },
-  //   });
-  // }
+  if (
+    !isDesktop &&
+    (selectedItem === "Início" || selectedItem === "Transferências")
+  ) {
+    images.push({
+      key: "illustration",
+      src: Ilustracao2,
+      alt: "ilustração",
+      width: isTablet ? 327 : 280,
+      height: 231,
+      sx: {
+        position: "absolute",
+        bottom: "28px",
+        right: "16px",
+        width: isTablet ? "327px" : "280px",
+        height: "231px",
+      },
+    });
+  }
 
   return (
     <>

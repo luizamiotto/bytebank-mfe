@@ -49,7 +49,12 @@ export const selectEditingId = (state) => state.transactions.editingId;
 export const selectCurrentBalance = createSelector(
   (state) => state.transactions.transactions,
   (transactions) =>
-    transactions.reduce((acc, transaction) => acc + transaction.value, 0)
+    transactions.reduce((acc, transaction) => {
+      const signedValue = transaction.type === "Transferência"
+        ? -Math.abs(transaction.value)
+        : transaction.value;
+      return acc + signedValue;
+    }, 0)
 );
 
 export const {

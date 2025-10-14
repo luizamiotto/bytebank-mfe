@@ -1,7 +1,6 @@
 import { useResponsive } from "@bytebank/context";
 import { Box, Typography } from "@mui/material";
 import { ValueCard, ChartCard, TransactionImages } from "@bytebank/components";
-// import { investmentsMock } from "@/app/mocks/investments-mock";
 
 /** Componente que exibe os investimentos. */
 export default function Investments() {
@@ -45,11 +44,10 @@ export default function Investments() {
 					textAlign: isMobile ? "center" : "left",
 					position: "relative",
 				}}
-			>Total: 
-			{/* {investmentsMock[0].total.toLocaleString("pt-BR", {
+			>Total: {(50000).toLocaleString("pt-BR", {
 				style: "currency",
 				currency: "BRL",
-			})} */}
+			})}
 			</Typography>
 
 			<Box 
@@ -61,8 +59,8 @@ export default function Investments() {
 					justifyContent: "space-around",
 				}}
 			>
-				{/* <ValueCard title="Renda Fixa" value={investmentsMock[0].fixo} />
-				<ValueCard title="Renda Variável" value={investmentsMock[0].variavel}/> */}
+				<ValueCard title="Renda Fixa" value={36000} />
+				<ValueCard title="Renda Variável" value={14000}/>
 			</Box>
 
 			<Typography
