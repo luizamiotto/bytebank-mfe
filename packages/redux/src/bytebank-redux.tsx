@@ -14,5 +14,6 @@ export {
   selectEditingId,
   selectTransactions,
   selectTransactionById,
-  selectCurrentBalance,
 } from "./features/transactions";
+
+export { default as store } from "./store";
