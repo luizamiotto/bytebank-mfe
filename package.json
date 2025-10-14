@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "lockfileVersion": 3,
   "requires": true,
+  "packageManager": "npm@10.9.0",
   "packages": {
     "": {
       "name": "bytebank-mfe",
