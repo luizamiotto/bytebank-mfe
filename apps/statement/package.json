@@ -46,7 +46,7 @@
     "webpack-config-single-spa": "^4.0.0",
     "webpack-config-single-spa-react-ts": "^4.0.0",
     "webpack-config-single-spa-ts": "^4.0.0",
-    "webpack-dev-server": "^4.15.2",
+    "webpack-dev-server": "^5.2.2",
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
@@ -54,6 +54,7 @@
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.4",
     "@mui/material": "^7.3.4",
+    "@reduxjs/toolkit": "^2.9.0",
     "@types/jest": "^27.0.1",
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
@@ -64,7 +65,8 @@
   },
   "peerDependencies": {
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-redux": "^9.2.0"
   },
   "types": "dist/bytebank-statement.d.ts",
   "packageManager": "npm@11.3.0"

@@ -28,9 +28,11 @@ module.exports = (webpackConfigEnv, argv) => {
     externals: [
       "react",
       "react-dom",
+      "react-redux",
       "@bytebank/styles",
       "@bytebank/context",
       "@bytebank/components",
+      "@bytebank/redux",
     ],
   });
 };

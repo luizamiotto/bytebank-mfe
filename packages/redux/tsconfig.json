@@ -1,0 +1,15 @@
+{
+  "extends": "ts-config-single-spa",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "declaration": true,
+    "declarationDir": "dist",
+    "rootDir": "src",
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true
+  },
+  "files": ["src/bytebank-redux.tsx"],
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.test*", "node_modules", "dist"]
+}
