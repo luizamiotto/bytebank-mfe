@@ -72,5 +72,5 @@
     "react-dom": "18.2.0"
   },
   "types": "dist/bytebank-central-box.d.ts",
-  "packageManager": "pnpm@9.12.0"
+  "packageManager": "npm@11.3.0"
 }
