@@ -1,6 +1,4 @@
-"use client";
 import { useResponsive } from "@bytebank/context";
-
 import {
   Box,
   Typography,
@@ -13,17 +11,10 @@ import {
 } from "@mui/material";
 import { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  setEditingId,
-  deleteTransaction,
-  selectEditingId,
-} from "@bytebank/redux/src/features/transactions";
-import FormModal from "@bytebank/components/src/FormModal";
-import EditButton from "@bytebank/components/src/EditButton";
-import StatementItem from "@bytebank/components/src/StatementItem";
-import FilterButton from "@bytebank/components/src/FilterButton";
+import { setEditingId, deleteTransaction, selectEditingId } from "@bytebank/redux";
+import { FormModal, EditButton, StatementItem, FilterButton } from "@bytebank/components";
 
-export default function Statement() {
+export default function Root() {
   const { isMobile, isDesktop } = useResponsive();
   const dispatch = useDispatch();
   const editingId = useSelector(selectEditingId);

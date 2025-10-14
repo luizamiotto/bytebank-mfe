@@ -1,6 +1,5 @@
-"use client";
 import { useResponsive } from "@bytebank/context";
-import { selectCurrentBalance } from "@bytebank/redux/src/features/transactions";
+import { selectCurrentBalance } from "@bytebank/redux";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import type { SxProps, Theme } from "@mui/material";

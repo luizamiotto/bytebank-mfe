@@ -31,6 +31,7 @@ module.exports = (webpackConfigEnv, argv) => {
       "@bytebank/styles",
       "@bytebank/context",
       "@bytebank/components",
+      "@bytebank/redux",
     ],
   });
 };

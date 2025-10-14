@@ -1,9 +1,8 @@
-"use client";
 import { useResponsive } from "@bytebank/context";
 import { useSelector } from "react-redux";
 import { Box, Typography } from "@mui/material";
 import TransactionForm from "../TransactionForm";
-import { selectEditingId } from "@bytebank/redux/src/features/transactions";
+import { selectEditingId } from "@bytebank/redux";
 import TransactionImages from "../TransactionImages";
 
 /** Componente que exibe o formulário de transação */

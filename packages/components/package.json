@@ -57,12 +57,12 @@
     "single-spa": "^5.9.3",
     "single-spa-react": "^6.0.2",
     "@reduxjs/toolkit": "^2.9.0",
-    "react-redux": "^9.2.0",
     "uuid": "^13.0.0"
   },
   "peerDependencies": {
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-redux": "^9.2.0"
   },
   "types": "dist/bytebank-components.d.ts"
 }

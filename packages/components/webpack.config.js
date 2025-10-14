@@ -11,7 +11,7 @@ module.exports = (webpackConfigEnv, argv) => {
   });
 
   return merge(defaultConfig, {
-    externals: ["react", "react-dom"],
+    externals: ["react", "react-dom", "react-redux", "@bytebank/redux"],
     module: {
       rules: [
         {

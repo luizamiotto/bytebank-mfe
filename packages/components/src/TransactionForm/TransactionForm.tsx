@@ -7,7 +7,7 @@ import {
   selectTransactions,
   selectTransactionById,
   setEditingId,
-} from "@bytebank/redux/src/features/transactions";
+} from "@bytebank/redux";
 import type { SxProps, Theme } from "@mui/material";
 import {
   Box,
