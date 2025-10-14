@@ -1,18 +1,20 @@
 import { useResponsive } from "@bytebank/context";
-// import { useSidebar } from "@/app/contexts/SidebarContext";
 import { Box } from "@mui/material";
 import { SidebarList } from "@bytebank/components";
+import { useSelector } from "react-redux";
+import { selectedItem } from "@bytebank/redux";
 
 export default function Root() {
   const { isTablet, isDesktop } = useResponsive();
-  // const { selectedItem } = useSidebar();
+  const item = useSelector(selectedItem);
 
   return isDesktop ? (
     <Box
       sx={{
         width: "180px",
         height: "904px",
-        // height: selectedItem === "Início" || selectedItem === "Transferências" ? "904px" : "1009px",
+        height:
+          item === "Início" || item === "Transferências" ? "904px" : "1009px",
         position: "relative",
         top: "24px",
         borderRadius: "8px",
@@ -33,4 +35,3 @@ export default function Root() {
     </Box>
   ) : null;
 }
-

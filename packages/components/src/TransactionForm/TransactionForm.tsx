@@ -4,7 +4,6 @@ import {
   addTransaction,
   editTransaction,
   selectEditingId,
-  selectTransactions,
   selectTransactionById,
   setEditingId,
 } from "@bytebank/redux";
@@ -32,7 +31,6 @@ export default function TransactionForm({ onCancel }: TransactionFormProps) {
 
   // selectors
   const editingId = useSelector(selectEditingId);
-  const transactions = useSelector(selectTransactions);
   // pega a transação diretamente do store (estável)
   const transaction = useSelector((state) =>
     selectTransactionById(state, editingId)
