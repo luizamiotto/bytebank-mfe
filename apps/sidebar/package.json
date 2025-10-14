@@ -62,7 +62,10 @@
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
     "single-spa": "^5.9.3",
-    "single-spa-react": "^6.0.2"
+    "single-spa-react": "^6.0.2",
+    "@bytebank/components": "workspace:*",
+    "@bytebank/redux": "workspace:*",
+    "@bytebank/context": "workspace:*"
   },
   "peerDependencies": {
     "react": "18.2.0",

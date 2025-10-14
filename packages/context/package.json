@@ -3,7 +3,6 @@
   "scripts": {
     "start": "webpack serve --port 3000",
     "start:standalone": "webpack serve --env standalone",
-    "build": "concurrently npm:build:*",
     "build:webpack": "webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",
     "lint": "eslint src --ext js,ts,tsx",
@@ -12,8 +11,11 @@
     "test": "cross-env BABEL_ENV=test jest",
     "watch-tests": "cross-env BABEL_ENV=test jest --watch",
     "coverage": "cross-env BABEL_ENV=test jest --coverage",
-    "build:types": "tsc",
-    "dev": "webpack serve --port 9002"
+    "dev": "webpack serve --port 9002",
+    "clean": "rimraf dist",
+    "build:types": "tsc -b",
+    "build:bundle": "tsup src/index.tsx --dts --outDir dist",
+    "build": "npm run clean && npm run build:types && npm run build:bundle"
   },
   "devDependencies": {
     "@babel/core": "^7.23.3",

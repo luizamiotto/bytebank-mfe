@@ -63,7 +63,9 @@
     "@types/webpack-env": "^1.16.2",
     "react-redux": "^9.2.0",
     "single-spa": "^5.9.3",
-    "single-spa-react": "^6.0.2"
+    "single-spa-react": "^6.0.2",
+    "@bytebank/components": "workspace:*",
+    "@bytebank/context": "workspace:*"
   },
   "peerDependencies": {
     "react": "18.2.0",
