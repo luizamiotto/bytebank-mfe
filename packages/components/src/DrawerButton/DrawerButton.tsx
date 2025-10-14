@@ -1,26 +1,11 @@
-import MenuIcon from "@mui/icons-material/Menu";
-import { Button } from "@mui/material";
-import { useState } from "react";
-// import SidebarList from "../sidebar-components/SidebarList";
+import { Provider } from "react-redux";
+import { store } from "@bytebank/redux";
+import DrawerButtonContent from "./components/DrawerButtonComponent";
 
-export default function DrawerButton() {
-  const [open, setOpen] = useState(false);
-  const toggleSidebar = () => setOpen((prev) => !prev);
-
+export default function Root() {
   return (
-	<>
-	  <Button onClick={toggleSidebar}>
-		<MenuIcon
-		  sx={{
-			color: "var(--secondaryColor)",
-			height: "40px",
-			width: "40px",
-			fontWeight: 300,
-		  }}
-		/>
-	  </Button>
-
-	  {/* {open && <SidebarList onClose={() => setOpen(false)} />} */}
-	</>
+    <Provider store={store}>
+      <DrawerButtonContent />
+    </Provider>
   );
 }
