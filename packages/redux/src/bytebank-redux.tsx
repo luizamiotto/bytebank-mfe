@@ -8,3 +8,5 @@ export {
   selectTransactionById,
   selectCurrentBalance
 } from "./features/transactions.js";
+
+export { default as store } from './store';
