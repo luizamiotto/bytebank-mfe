@@ -30,7 +30,7 @@ const sidebarSlice = createSlice({
   },
 });
 
-export const setSelectedItem = sidebarSlice.actions;
+export const { setSelectedItem } = sidebarSlice.actions;
 
 // selectors
 export const selectSidebarItems = (state: any) => state.sidebar.items;

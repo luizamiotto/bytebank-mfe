@@ -1,4 +1,3 @@
-"use client";
 import { navigateToUrl } from "single-spa";
 import { useResponsive } from "@bytebank/context";
 import CloseIcon from "@mui/icons-material/Close";

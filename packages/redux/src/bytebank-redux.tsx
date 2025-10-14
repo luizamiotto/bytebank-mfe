@@ -2,7 +2,7 @@
 export {
   setSelectedItem,
   selectSidebarItems,
-  selectSelectedItem,
+  selectSelectedItem
 } from "./features/sidebarSlice";
 
 // reexporte outros slices se quiser
@@ -14,6 +14,7 @@ export {
   selectEditingId,
   selectTransactions,
   selectTransactionById,
+  selectCurrentBalance
 } from "./features/transactions";
 
 export { default as store } from "./store";

@@ -61,14 +61,13 @@
     "@types/react-dom": "^17.0.9",
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
-    "react-redux": "^9.2.0",
     "single-spa": "^5.9.3",
-    "single-spa-react": "^6.0.2",
-    "@reduxjs/toolkit": "^2.9.0"
+    "single-spa-react": "^6.0.2"
   },
   "peerDependencies": {
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-redux": "^9.2.0"
   },
   "types": "dist/bytebank-sidebar.d.ts",
   "packageManager": "npm@11.3.0"
