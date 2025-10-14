@@ -1,5 +1,4 @@
 import { useResponsive } from "@bytebank/context";
-// import { userMock } from "@/app/mocks/user-mock";
 import { Box, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { Balance, WelcomeImages } from "@bytebank/components";
@@ -48,8 +47,7 @@ export default function Welcome() {
 						textAlign: isMobile ? "center" : "left",
 					}}
 				>
-					Olá, Nome e Sobrenome
-					{/* {userMock[0].first_name}! :) */}
+					Olá, Joana! :)
 				</Typography>
 
 				<Typography

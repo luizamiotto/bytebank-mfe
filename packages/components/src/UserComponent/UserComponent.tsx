@@ -1,5 +1,4 @@
 import { useResponsive } from "@bytebank/context";
-// import { userMock } from "@/app/mocks/user-mock";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import { Box, Typography } from "@mui/material";
 
@@ -24,8 +23,7 @@ export default function UserComponent() {
 					padding: "0 10px",
 					textWrap: "nowrap",
 					}}
-				> Nome e Sobrenome
-					{/* {userMock[0].first_name + " " + userMock[0].last_name} */}
+				> Joana da Silva Oliveira
 				</Typography>
 			)}
 				<AccountCircleOutlinedIcon
