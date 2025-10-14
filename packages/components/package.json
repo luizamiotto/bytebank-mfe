@@ -48,6 +48,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@bytebank/redux": "*",
     "@mui/x-charts": "^8.14.0",
     "@types/jest": "^27.0.1",
     "@types/react": "^17.0.19",
