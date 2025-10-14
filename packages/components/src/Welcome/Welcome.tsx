@@ -1,7 +1,8 @@
 import { useResponsive } from "@bytebank/context";
 import { Box, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
-import { Balance, WelcomeImages } from "@bytebank/components";
+import Balance from "../Balance";
+import WelcomeImages from "../WelcomeImages";
 
 /** Componente que exibe a saudação de boas-vindas ao usuário. */
 export default function Welcome() {

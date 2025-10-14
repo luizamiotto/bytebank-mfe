@@ -1,5 +1,7 @@
 import { useResponsive } from "@bytebank/context";
-import { Pixels2, Pixels3, Ilustracao2 } from "@bytebank/components";
+import { Pixels2 } from "../Images";
+import { Pixels3 } from "../Images";
+import { Ilustracao2 } from "../Images";
 import { useSelector } from "react-redux";
 import { selectSelectedItem } from "@bytebank/redux";
 import { Box } from "@mui/material";

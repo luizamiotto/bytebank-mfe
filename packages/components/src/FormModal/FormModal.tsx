@@ -1,6 +1,6 @@
 import { Dialog, DialogContent, DialogTitle } from "@mui/material";
 import { useResponsive } from "@bytebank/context";
-import { TransactionForm } from "@bytebank/components";
+import TransactionForm from "../TransactionForm";
 
 interface FormModalProps {
 	open: boolean;

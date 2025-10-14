@@ -1,7 +1,7 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import { Button } from "@mui/material";
 import { useState } from "react";
-import { SidebarList } from "@bytebank/components";
+import SidebarList from "../../SidebarList";
 
 export default function DrawerButtonContent() {
 	const [open, setOpen] = useState(false);

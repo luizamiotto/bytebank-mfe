@@ -1,4 +1,6 @@
-import { Pixels, Pixels1, Ilustracao1 } from "@bytebank/components";
+import { Pixels } from "../Images";
+import { Pixels1 } from "../Images";
+import { Ilustracao1 } from "../Images";
 import { useResponsive } from "@bytebank/context";
 import { Box } from "@mui/material";
 
